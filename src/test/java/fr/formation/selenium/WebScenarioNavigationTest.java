@@ -54,8 +54,8 @@ public class WebScenarioNavigationTest {
 	}
 	
 	@Test
-	public void navigationEdge() {
-		driver = new EdgeDriver();
+	public void navigationChrome() {
+		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		vars = new HashMap<String, Object>();
 		
