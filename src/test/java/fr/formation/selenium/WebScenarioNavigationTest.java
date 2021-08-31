@@ -40,7 +40,7 @@ public class WebScenarioNavigationTest {
 		// Test name: SC1
 		// Step # | name | target | value
 		// 1 | open | /banque-web-1.0.0-RELEASE/ |
-		driver.get("http://localhost:9000/banque-web-1.0.0-RELEASE/");
+		driver.get("http://localhost:9000/banque-web/");
 		// 3 | assertText | css=h2 | Bienvenue sur votre Banque en ligne !!!
 		assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Bienvenue sur votre Banque en ligne !!!"));
 		// 4 | click | linkText=Nous Contacter |
@@ -62,7 +62,7 @@ public class WebScenarioNavigationTest {
 		// Test name: SC1
 		// Step # | name | target | value
 		// 1 | open | /banque-web-1.0.0-RELEASE/ |
-		driver.get("http://localhost:9000/banque-web-1.0.0-RELEASE/");
+		driver.get("http://localhost:9000/banque-web/");
 		// 3 | assertText | css=h2 | Bienvenue sur votre Banque en ligne !!!
 		assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Bienvenue sur votre Banque en ligne !!!"));
 		// 4 | click | linkText=Nous Contacter |
