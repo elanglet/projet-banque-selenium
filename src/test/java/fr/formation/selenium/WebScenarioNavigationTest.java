@@ -53,25 +53,25 @@ public class WebScenarioNavigationTest {
 		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Identification Client"));
 	}
 	
-	@Test
-	public void navigationChrome() {
-		driver = new ChromeDriver();
-		js = (JavascriptExecutor) driver;
-		vars = new HashMap<String, Object>();
-		
-		// Test name: SC1
-		// Step # | name | target | value
-		// 1 | open | /banque-web-1.0.0-RELEASE/ |
-		driver.get("http://localhost:9000/banque-web/");
-		// 3 | assertText | css=h2 | Bienvenue sur votre Banque en ligne !!!
-		assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Bienvenue sur votre Banque en ligne !!!"));
-		// 4 | click | linkText=Nous Contacter |
-		driver.findElement(By.id("link-contact")).click();
-		// 5 | assertText | css=h3 | Nous contacter
-		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous contacter"));
-		// 6 | click | linkText=Accès client |
-		driver.findElement(By.linkText("Accès client")).click();
-		// 7 | assertText | css=h3 | Identification Client
-		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Identification Client"));
-	}
+//	@Test
+//	public void navigationChrome() {
+//		driver = new ChromeDriver();
+//		js = (JavascriptExecutor) driver;
+//		vars = new HashMap<String, Object>();
+//		
+//		// Test name: SC1
+//		// Step # | name | target | value
+//		// 1 | open | /banque-web-1.0.0-RELEASE/ |
+//		driver.get("http://localhost:9000/banque-web/");
+//		// 3 | assertText | css=h2 | Bienvenue sur votre Banque en ligne !!!
+//		assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Bienvenue sur votre Banque en ligne !!!"));
+//		// 4 | click | linkText=Nous Contacter |
+//		driver.findElement(By.id("link-contact")).click();
+//		// 5 | assertText | css=h3 | Nous contacter
+//		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous contacter"));
+//		// 6 | click | linkText=Accès client |
+//		driver.findElement(By.linkText("Accès client")).click();
+//		// 7 | assertText | css=h3 | Identification Client
+//		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Identification Client"));
+//	}
 }
