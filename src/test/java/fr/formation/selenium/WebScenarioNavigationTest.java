@@ -44,7 +44,7 @@ public class WebScenarioNavigationTest {
 		// 3 | assertText | css=h2 | Bienvenue sur votre Banque en ligne !!!
 		assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Bienvenue sur votre Banque en ligne !!!"));
 		// 4 | click | linkText=Nous Contacter |
-		driver.findElement(By.linkText("Nous Contacter")).click();
+		driver.findElement(By.id("link-contact")).click();
 		// 5 | assertText | css=h3 | Nous contacter
 		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous contacter"));
 		// 6 | click | linkText=Accès client |
@@ -66,7 +66,7 @@ public class WebScenarioNavigationTest {
 		// 3 | assertText | css=h2 | Bienvenue sur votre Banque en ligne !!!
 		assertThat(driver.findElement(By.cssSelector("h2")).getText(), is("Bienvenue sur votre Banque en ligne !!!"));
 		// 4 | click | linkText=Nous Contacter |
-		driver.findElement(By.linkText("Nous Contacter")).click();
+		driver.findElement(By.id("link-contact")).click();
 		// 5 | assertText | css=h3 | Nous contacter
 		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous contacter"));
 		// 6 | click | linkText=Accès client |
