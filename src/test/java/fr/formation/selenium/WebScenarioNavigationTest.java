@@ -46,7 +46,7 @@ public class WebScenarioNavigationTest {
 		// 4 | click | linkText=Nous Contacter |
 		driver.findElement(By.linkText("Nous Contacter")).click();
 		// 5 | assertText | css=h3 | Nous contacter
-		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous contacter"));
+		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous Contacter"));
 		// 6 | click | linkText=Accès client |
 		driver.findElement(By.linkText("Accès client")).click();
 		// 7 | assertText | css=h3 | Identification Client
@@ -68,7 +68,7 @@ public class WebScenarioNavigationTest {
 		// 4 | click | linkText=Nous Contacter |
 		driver.findElement(By.linkText("Nous Contacter")).click();
 		// 5 | assertText | css=h3 | Nous contacter
-		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous contacter"));
+		assertThat(driver.findElement(By.cssSelector("h3")).getText(), is("Nous Contacter"));
 		// 6 | click | linkText=Accès client |
 		driver.findElement(By.linkText("Accès client")).click();
 		// 7 | assertText | css=h3 | Identification Client
